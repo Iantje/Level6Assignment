@@ -45,15 +45,28 @@
                     android:textSize="24sp"
                     tools:text="Bohemian Rhapsody" />
 
-                <TextView
-                    android:id="@+id/detailMovieRelease"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    tools:text="Release: 2018-10-24" />
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Released on " />
+
+                    <TextView
+                        android:id="@+id/detailMovieRelease"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="2018-10-24" />
+
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
                     android:orientation="horizontal">
 
                     <ImageView
